@@ -47,7 +47,7 @@ res.render("index.ejs", {bandName: randomName});
 
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Listening on port ${port}`);
 });
 
